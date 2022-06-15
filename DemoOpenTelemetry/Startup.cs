@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using DemoOpenTelemetry.Clients;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DemoOpenTelemetry
 {
@@ -19,8 +20,8 @@ namespace DemoOpenTelemetry
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-            services.AddHttpClient<WeatherHttpClient>();
+            services.AddControllers(o => o.Filters.Add(new ProducesAttribute("application/json")));
+            services.AddHttpClient<WeatherClient>();
             services.AddSwaggerGen();
         }
 
