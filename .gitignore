@@ -1,0 +1,84 @@
+# Other versioning systems
+.svn
+$tf*
+*.vspscc
+*.vssscc
+
+# Visual Studio
+bin
+obj
+.vs
+.vscode
+*.suo
+*.trx
+*.user
+
+# Ignore merge file
+*.orig
+
+# Packages folders
+/Main/Src/packages
+/Main/Utilities/*/packages
+
+# Auto generated files
+/Main/Src/.JustCode/*
+*.feature.cs
+*.coverage
+
+# Test files
+/Main/Src/TestResults
+
+# Database files
+*.mdf
+*.ldf
+
+# JetBrains ReSharper settings are not shared (currently)
+*.DotSettings
+
+# JetBrains ReSharper user-specific settings file need to be ignored.
+*.DotSettings.user
+
+# JetBrains Rider
+.idea/
+
+# Configuration
+developer.traversal.targets
+*.overrides.config
+
+# DITA Open Toolkit runtime, output and temporary files created by makedoc.bat
+/Main/Docs/**/Dita-ot
+/Main/Docs/**/out
+/Main/Docs/**/temp
+/Main/Docs/DocFactory/Runtime
+/Main/Docs/Output
+
+# ??
+/Main/Build/BuildTargets/TreeClean.ps1
+
+# Python compiled files
+*.pyc
+/Main/Build/Tools/Scripts/UserList.json
+
+# txt files containing earth process ID's in the UITest folder, created by Squish when running Fusion tests
+/Main/UITest/**/earthProcesses.txt
+
+# Squish related files used by test cases
+/Main/UITest/**/actualPropertyStatisticsReport.txt
+/Main/UITest/**/K1 part I (NFA-case).xlsx
+/Main/UITest/fusionTestSuites/suite_K1Tutorial_Part1/tst_10_DisplayingProductionProfiles/NFA-case.rate.ascii
+/Main/UITest/fusionTestSuites/suite_GeomechanicalModel_CRUD/tst_01_CreateModel/GM1.gm5
+/Main/UITest/fusionTestSuites/suite_ModelingGeomechanics/screenshots/*.png
+/Main/UITest/fusionTestSuites/suite_UTH_X_Case/*.dat
+# Squish generated names.py files
+/Main/UITest/**/names.py
+
+# Squish related log files
+/Main/UITest/fusionTestSuites/**/*.log
+
+#css
+
+*.min.css
+*.log
+/Main/Utilities/UserAccessManagement/PetroSignsUserManagementWebApp/appsettings.Development.json
+/Main/Utilities/UserAccessManagement/WebService/appsettings.Development.json
+/Main/Src/Backup_dotNETcore
